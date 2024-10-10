@@ -1,0 +1,117 @@
+body{
+    font-family: sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+}
+
+.result-main{
+    background: linear-gradient(180deg, #5e3be6 0%, #4a21e1 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.result-main p{
+    margin: 10px 0;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score-number{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.score-of{
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+.result-text{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Sumary*/
+
+.result-sumary{
+    padding: 30px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.result-sumary h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sumary-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f9fc;
+    border-radius: 10px;
+}
+
+.sumary-item:nth-child(1){ background-color: #ffe3e3;}
+.sumary-item:nth-child(2){ background-color: #fff9e3;}
+.sumary-item:nth-child(3){ background-color: #e3f7f5;}
+.sumary-item:nth-child(4){ background-color: #e3ebff;}
+
+.score{
+    font-weight: bold;
+}
+
+.continue-btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #5e3be6;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.continue-btn:hover{
+    background-color: #4a21e1;
+}
+
+@media (max-width: 768px){
+    .result-card{
+        flex-direction: column;
+        width: 100%;
+    }
+}
